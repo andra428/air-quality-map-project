@@ -1,0 +1,387 @@
+.containerProfile {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  overflow-y: auto;
+}
+
+.btnContainer {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.btnSettings {
+  border: none;
+  font-size: medium;
+  background-color: transparent;
+  color: white;
+}
+.btnSettings:hover {
+  background-color: transparent;
+  cursor: pointer;
+}
+.modalOverlay {
+  position: fixed;
+  top: 7vh;
+  right: 0;
+  width: 25vw;
+  height: 98vh;
+  background-color: #30363d;
+  z-index: 1000;
+  display: grid;
+  transform: translateX(0);
+  grid-template-rows: repeat(5, min-content);
+  align-items: center;
+
+  gap: 2rem;
+}
+.modalProfile {
+  position: fixed;
+  top: 7vh;
+  right: 0;
+  width: 25vw;
+  height: 93vh;
+  background-color: #30363d;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+.headingX {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding-top: 1rem;
+}
+.headingCombined {
+  display: flex;
+  gap: 0.5rem;
+}
+.btnClose {
+  border: none;
+  background-color: transparent;
+}
+.btnClose:hover {
+  cursor: pointer;
+}
+.settingsImg {
+  width: 14rem;
+  height: 10rem;
+  justify-self: center;
+}
+.paragraphLogin {
+  text-align: center;
+  justify-self: center;
+  font-size: medium;
+  width: 80%;
+}
+.btnSignIn {
+  width: 70%;
+  height: 4rem;
+  background-color: #6202ee;
+  color: white;
+  border: none;
+  font-size: medium;
+  justify-self: center;
+}
+.btnSignIn:hover {
+  cursor: pointer;
+  border: 1px solid white;
+}
+.btnAbout {
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: medium;
+  justify-self: center;
+}
+.btnAbout:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.imgProfile {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+.profileDetails {
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+}
+.imgProfileBigger {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+}
+.profileName {
+  display: flex;
+  padding: 1rem;
+  font-size: 1.2rem;
+  flex-direction: column;
+}
+.displayName {
+  font-weight: 600;
+  font-size: 2rem;
+}
+.profileContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.btnAdd {
+  align-self: center;
+  height: 4rem;
+  width: 90%;
+  font-weight: 700;
+  font-size: 1.5rem;
+  background-color: transparent;
+  color: white;
+  border: none;
+}
+.btnAdd:hover {
+  border: 1px solid white;
+  cursor: pointer;
+}
+.containerProfileButtons {
+  align-self: center;
+  width: 90%;
+  height: 5rem;
+  background-color: #6202ee;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.privacyIcon {
+  width: 2rem;
+  height: 2rem;
+}
+.signOutIcon {
+  width: 2.2rem;
+  height: 2.2rem;
+}
+.privacyContainer {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+.privacyContainer:hover {
+  cursor: pointer;
+  color: #acafb1;
+}
+.aboutContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 45rem;
+  height: 45rem;
+  padding: 1rem;
+  z-index: 1000;
+  background-color: #242c35;
+  display: grid;
+  grid-template-rows: repeat(2, min-content);
+}
+.topHeading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.groupLogo {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+}
+.text {
+  display: block;
+  width: 80%;
+  font-size: 1.2rem;
+  margin: auto;
+  padding: 1rem;
+  font-weight: 400;
+}
+
+.aboutModalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.btnCloseX {
+  justify-self: end;
+  border: none;
+  background-color: transparent;
+  width: 25px;
+  height: 25px;
+}
+.btnCloseX:hover {
+  cursor: pointer;
+}
+.aboutContainerContent {
+  padding: 20px;
+}
+.downBarContainer {
+  width: 80%;
+  height: 5rem;
+  background-color: #242c35;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  bottom: 2%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+}
+.btnDownBarContainer {
+  background-color: transparent;
+  border: none;
+}
+.btnDownBarContainer:hover {
+  cursor: pointer;
+}
+@media (max-width: 1100px) {
+  .btnSettings {
+    font-size: 1.4rem;
+  }
+  .imgProfileBigger {
+    width: 5rem;
+    height: 5rem;
+  }
+  .displayName {
+    font-size: 1.6rem;
+  }
+  .privacyIcon {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .signOutIcon {
+    width: 1.7rem;
+    height: 1.7rem;
+  }
+}
+@media (max-width: 900px) {
+  .modalOverlay {
+    width: 35vw;
+  }
+  .modalProfile {
+    width: 35vw;
+  }
+  .settingsImg {
+    width: 10rem;
+    height: 6rem;
+  }
+  .paragraphLogin {
+    font-size: 1.2rem;
+  }
+  .btnSignIn {
+    height: 3rem;
+    font-size: 1.5rem;
+  }
+  .btnSettings {
+    font-size: 1.2rem;
+  }
+  .imgProfileBigger {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+  .displayName {
+    font-size: 1.2rem;
+  }
+  .privacyIcon {
+    display: none;
+  }
+  .signOutIcon {
+    display: none;
+  }
+  .btnAdd {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 700px) {
+  .modalOverlay {
+    width: 40vw;
+  }
+  .modalProfile {
+    width: 40vw;
+  }
+  .settingsImg {
+    width: 8rem;
+    height: 4rem;
+  }
+  .paragraphLogin {
+    font-size: 1rem;
+  }
+  .btnSignIn {
+    height: 2.5rem;
+    font-size: 1.2rem;
+  }
+  .btnAbout {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 570px) {
+  .modalOverlay {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    gap: 6rem;
+  }
+  .modalProfile {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    overflow-x: hidden;
+  }
+  .privacyIcon {
+    display: block;
+  }
+  .signOutIcon {
+    display: block;
+  }
+  .imgProfileBigger {
+    width: 6rem;
+    height: 6rem;
+  }
+  .displayName {
+    font-size: 2rem;
+  }
+  .aboutContainer {
+    width: 100%;
+    height: 100%;
+  }
+  .settingsImg {
+    width: 14rem;
+    height: 10rem;
+  }
+  .paragraphLogin {
+    font-size: 2rem;
+  }
+  .btnSignIn {
+    height: 3rem;
+    font-size: 1.4rem;
+  }
+  .btnAbout {
+    font-size: 1.4rem;
+  }
+}

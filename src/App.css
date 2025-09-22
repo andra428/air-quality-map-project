@@ -1,0 +1,94 @@
+#root {
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.leaflet-layer,
+.leaflet-control-attribution {
+  filter: invert(80%) brightness(70%) contrast(90%);
+}
+
+.leaflet-control-container .leaflet-bar a {
+  background-color: #7a1eff;
+  color: white;
+  border: 1px solid black;
+}
+.leaflet-top.leaflet-left {
+  top: 8vh;
+}
+.leaflet-popup-content-wrapper {
+  background-color: #3c444c;
+  border-radius: 8px;
+}
+.leaflet-popup-content {
+  margin: 0;
+  padding: 0;
+}
+.leaflet-popup-tip {
+  background-color: #3c444c;
+}
+.btn-currPos {
+  background-color: transparent;
+  margin-top: 1rem;
+  border: 1px solid black;
+  padding: 0;
+}
+.btn-currPos:hover {
+  cursor: pointer;
+}
+.img-currPos {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 2px;
+}
+
+.logo-container {
+  width: 26rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #828282;
+  font-size: 1.2rem;
+}
+
+.appLayout {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+.mainContentArea {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+.header-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: #242c35;
+}
+
+.mapArea {
+  height: 100vh;
+  width: 100vw;
+}
+@media (max-width: 570px) {
+  .header-overlay {
+    background-color: transparent;
+    width: 80%;
+  }
+  .btn-currPos {
+    border: none;
+  }
+  .img-currPos {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 2px;
+  }
+}
