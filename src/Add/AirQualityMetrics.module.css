@@ -1,0 +1,171 @@
+.circleContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+}
+.outerCircle {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #30363d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.innerCircle {
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  background: #30363d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rectangleContainer {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  width: 10rem;
+  height: 5rem;
+}
+.outerRectangle {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 10%;
+  background: #495057;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.innerRectangle {
+  position: absolute;
+  width: 97%;
+  height: 97%;
+  border-radius: 10%;
+  background: #30363d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  text-align: center;
+  color: #fff;
+}
+
+.value {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.label {
+  font-size: 1.4em;
+  color: #a0a0a0;
+  margin-bottom: 5px;
+}
+
+.metricsStats {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.btnDeviceTime {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.btnTime {
+  width: 35%;
+  height: 3rem;
+  font-size: 1.4rem;
+  border: none;
+  background-color: #3c444c;
+  color: #fff;
+}
+.btnTimeActive {
+  width: 35%;
+  height: 3rem;
+  color: #fff;
+  border: none;
+  font-weight: bolder;
+  background-color: #6202ee;
+}
+.btnTimeActive:hover {
+  cursor: pointer;
+}
+.btnTime:hover {
+  font-weight: bolder;
+  background-color: #6202ee;
+  cursor: pointer;
+}
+.displayMetrics {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.metricBG {
+  display: flex;
+  justify-content: center;
+  background-color: #3c444d;
+  width: 50%;
+  height: 22rem;
+  margin-top: 2rem;
+}
+.hourMetric {
+  width: 12rem;
+}
+.hourDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+.title {
+  font-size: 1.6rem;
+  font-weight: bolder;
+  color: #fff;
+}
+.range {
+  font-size: 1.2rem;
+}
+.dayMetricsContainer {
+  width: 100%;
+  height: 95%;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+.mbleft {
+  margin-left: 10px;
+}
+
+.searchLocationList {
+  list-style: decimal;
+  padding-left: 16px;
+  height: 8vh;
+  overflow-y: auto;
+}
+.searchLocationItem {
+  font-size: 1.4rem;
+}
+.searchLocationItem:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
